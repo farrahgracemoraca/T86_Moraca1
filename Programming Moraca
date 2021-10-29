@@ -1,0 +1,132 @@
+#include<stdio.h>
+
+
+int main()
+
+{
+
+int choice, price, payment, change;
+
+
+printf("\n    SOFTDRINKS \n   vendo machine");
+
+
+printf("\nChoose your item:");
+
+printf("\n[1] Sprite: Php150");
+
+printf("\n[2] Mountain dew: Php180");
+
+printf("\n[3] Royal: Php200\nChoice:  ");
+
+scanf("%d", &choice);
+
+
+switch (choice){
+
+case 1:
+
+price = 150;
+
+printf("\nInput payment: Php");
+
+scanf("%d", &payment);
+
+if(payment>=price)
+
+{
+
+change = payment - price;
+
+printf("Change: Php%d", change);
+
+printf("\n         Thank you!\nYou have successfully purchased Sprite\n....Enjoy!");
+
+}
+
+else
+
+{
+
+printf("\nYou don't have enough funds!");
+
+}
+
+break;
+
+
+case 2:
+
+price = 180;
+
+
+printf("\nInput Payment: Php");
+
+scanf("%d", &payment);
+
+if(payment>=180)
+
+{
+
+change = payment - price;
+
+printf("Change: Php%d", change);
+
+printf("\n         Thank you!\nYou have successfully purchased Mountain dew\n....Enjoy!");
+
+}
+
+else
+
+{
+
+printf("\nYou don't have enough funds!");
+
+}
+
+break;
+
+
+case 3:
+
+price = 200;
+
+
+printf("Input payment: Php");
+
+scanf("%d", &payment);
+
+if(payment>=200)
+
+{
+
+change = payment - price;
+
+printf("Change: Php%d", change);
+
+printf("\n         Thank you!\nYou have successfully purchased Royal\n....Enjoy!");
+
+}
+
+else
+
+{
+
+printf("\nYou don't have enough funds!");
+
+}
+
+break;
+
+
+default:
+
+printf("\n        Invalid Input!");
+
+}
+
+return 0;
+
+}
+
+
